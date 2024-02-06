@@ -3,7 +3,7 @@ const tempData = [
     titulo: "Guardians of the Galaxy Vol. 2",
     year: 2017,
     director: "James Gunn",
-    duration: "2h 16min",
+    duration: "2h",
     genre: ["Action", "Adventure", "Comedy"],
     rate: 7.7,
     poster:
@@ -13,7 +13,7 @@ const tempData = [
     titulo: "estrella Wars: Episode IV - A New Hope",
     year: 1977,
     director: "George Lucas",
-    duration: "2h 1min",
+    duration: "2h",
     genre: ["Action", "Adventure", "Fantasy", "Sci-Fi"],
     rate: 8.7,
     poster:
@@ -23,10 +23,61 @@ const tempData = [
     titulo: "The Lord of the Rings: The Fellowship of the Ring",
     year: 2001,
     director: "Peter Jackson",
-    duration: "2h 58min",
+    duration: "3h",
     genre: ["Action", "Adventure", "Drama", "Fantasy"],
     rate: 8.8,
     poster:
-      "https://m.media-amazon.com/images/M/MV5BN2EyZjM3NzUtNWUzMi00MTgxLWI0NTctMzY4M2VlOTdjZWRiXkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_SX300.jpg",
+      "https://upload.wikimedia.org/wikipedia/en/f/fc/The_Lord_of_the_Rings%2C_T2T_%282002%29.jpg",
+  },
+
+  {
+    titulo: "The Lord of the Rings: The Fellowship of the Ring",
+    year: 2001,
+    director: "Peter Jackson",
+    duration: "3h",
+    genre: ["Action", "Adventure", "Drama", "Fantasy"],
+    rate: 8.8,
+    poster:
+      "https://static.wikia.nocookie.net/doblaje/images/8/89/Bugslife_full.jpg/revision/latest?cb=20170318192200&path-prefix=es",
   },
 ];
+
+
+const peliculasList = document.querySelector('.peliculas-list');
+
+tempData.forEach(pelicula => {
+    const li = document.createElement('li');
+
+    li.innerHTML = `
+        <div class="pelicula-tarjeta">
+            <a href="">
+                <figure class="tarjeta-banner">
+                    <img src="${pelicula.poster}" alt="${pelicula.titulo}">
+                </figure>
+            </a>
+            <div class="titulo-sub-cont">
+                <a href="">
+                    <h3 class="tarjeta-titulo">${pelicula.titulo}</h3>
+                </a>
+
+                <time datetime="${pelicula.year}">${pelicula.year}</time>
+            </div>
+
+            <div class="tarjeta-meta">
+            <div class="genre"><span class="span-genero">${pelicula.genre.join(', ')}</span></div>
+            <div class="badge badge-outline">${pelicula.director}</div>
+                <div class="duration">
+                    <ion-icon name="time-outline"></ion-icon>
+                    <time datetime="">${pelicula.duration}</time>
+                </div>
+                <div class="puntuacion">
+                    <ion-icon name="estrella"></ion-icon>
+                    <data>${pelicula.rate}</data>
+                </div>
+            </div>
+        </div>
+    `;
+
+    // Agregar el nuevo elemento <li> al contenedor <ul>
+    peliculasList.appendChild(li);
+});
