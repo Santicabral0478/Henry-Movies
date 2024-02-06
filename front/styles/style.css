@@ -340,20 +340,20 @@ background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
 /* INICIO */
 .gradient-cont {
   background: rgb(0,0,0);
-background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 70%);
   position: absolute;
-  min-height: 750px;
-    max-height: 1000px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding-block: 12rem;
-    margin-top: -2rem;
-    width: 100%;
+  min-height: 581px;
+  max-height: 1000px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-block: 2rem;
+  margin-top: -2rem;
+  width: 100%;
 }
   
   .inicio {
-    background-image: url(https://hips.hearstapps.com/hmg-prod/images/halco-n-sam-wilson-nuevo-capita-n-ame-rica-1556213398.jpg);
+    background-image: url(https://hips.hearstapps.com/hmg-prod/images/avengers-endgame-cap-sam-1607348922.png);
     background-size: cover;
     background-position: center;
     min-height: 750px;
@@ -361,7 +361,7 @@ background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding-block: 12rem;
+    padding-block: 6rem;
     margin-top: -2rem;
   }
 
@@ -711,16 +711,26 @@ background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
 
   @media (min-width: 1200px) {
 
-    .contenedor { max-width: 1320px; }
-    .peliculas-list { grid-template-columns: repeat(4, 1fr); }
-    .navbar { margin-inline: auto; }
+    .inicio .contenedor {
+      width: 1072px;
+    }
+    .peliculas-list { 
+      grid-template-columns: repeat(4, 1fr); 
+    }
+    .navbar { 
+      margin-inline: auto; 
+    }
     .header-acciones .btn-primary {
       display: block;
       padding: 10px 35px;
       letter-spacing: 1px;
     }
 
-    .inicio .contenedor { width: 1320px; }
-    .proximamente .peliculas-list > li { min-width: calc(25% - 22.5px); }
+    .inicio .contenedor { 
+      width: 1320px; 
+    }
+    .proximamente .peliculas-list > li { 
+      min-width: calc(25% - 22.5px); 
+    }
     
   }
