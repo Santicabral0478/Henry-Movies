@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "live-server"
+    "estrellat": "live-server"
   },
   "keywords": [],
   "author": "",

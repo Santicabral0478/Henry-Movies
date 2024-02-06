@@ -2,13 +2,767 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta name="viewport" contenido="width=device-width, initial-scale=1.0" />
+    <titulo>Henry Movies</titulo>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
   </head>
   <body>
-    <h1>Proyecto de M2</h1>
+    <!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+
+    
+  <header class="header" data-header>
+    <div class="contenedor">
+
+      <a href="./index.html" class="logo">
+        <img src="" alt="">
+      </a>
+
+      <button class="menu-open-btn" data-menu-open-btn>
+        <ion-icon name="reorder-two"></ion-icon>
+      </button>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+
+          <a href="./index.html" class="logo">
+            <img src="" alt="">
+          </a>
+
+          <button class="menu-close-btn" data-menu-close-btn>
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+
+        </div>
+
+        <ul class="navbar-list">
+
+          <li>
+            <a href="" class="navbar-link">Inicio</a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-link">Sobre este sitio</a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-link">Sobre el Desarrollador</a>
+          </li>
+
+        </ul>
+
+        <ul class="navbar-social-list">
+
+          <li>
+            <a href="#" class="navbar-social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-social-link">
+              <ion-icon name="logo-pinterest"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-social-link">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+    </div>
+  </header>
+
+
+    <main>
+
+        <!-- inicio -->
+        <section class="inicio">
+          <div class="contenedor">
+  
+            <div class="inicio-contenido">
+  
+              <p class="inicio-subtitulo">Henry Movies</p>
+  
+              <h1 class="h1 inicio-titulo">
+                Pelicula X
+              </h1>
+  
+              <div class="meta-sub-cont">
+  
+                <div class="badge-sub-cont">
+                  <div class="badge badge-fill">para todo publico</div>
+  
+                  <div class="badge badge-outline">HD</div>
+                </div>
+  
+                <div class="ganre-sub-cont">
+                  <a href="#">Aventura,</a>
+                  <a href="#">Humor</a>
+                </div>
+  
+                <div class="date-time">
+  
+                  <div>
+                    <ion-icon name="calendario-outline"></ion-icon>
+  
+                    <time datetime="2022">2004</time>
+                  </div>
+  
+                  <div>
+                    <ion-icon name="time-outline"></ion-icon>
+  
+                    <time datetime="PT128M">2hs</time>
+                  </div>
+  
+                </div>
+  
+              </div>
+  
+              <button class="btn btn-primary">
+                <ion-icon name="play"></ion-icon>
+  
+                <span>Mirar ahora</span>
+              </button>
+  
+            </div>
+  
+          </div>
+        </section>
+  
+  
+        <!-- PROXIMAMENTE -->
+
+
+        <section class="proximamente">
+          <div class="contenedor">
+  
+            <div class="flex-sub-cont">
+  
+              <div class="titulo-sub-cont">
+                <h2 class="h2 section-titulo">proximamente peliculas</h2>
+              </div>
+  
+              <ul class="filter-list">
+  
+                <li>
+                  <button class="filter-btn">peliculas</button>
+                </li>
+  
+                <li>
+                  <button class="filter-btn">Reality Shows</button>
+                </li>
+  
+                <li>
+                  <button class="filter-btn">Series</button>
+                </li>
+  
+              </ul>
+  
+            </div>
+  
+            <ul class="peliculas-list  has-scrollbar">
+  
+              <li>
+                <div class="pelicula-tarjeta">
+  
+                  <a href="">
+                    <figure class="tarjeta-banner">
+                      <img src="" alt="">
+                    </figure>
+                  </a>
+  
+                  <div class="titulo-sub-cont">
+                    <a href="">
+                      <h3 class="tarjeta-titulo">Nombre de "X Pelicula"</h3>
+                    </a>
+  
+                    <time datetime="2022">2004</time>
+                  </div>
+  
+                  <div class="tarjeta-meta">
+                    <div class="badge badge-outline">HD</div>
+  
+                    <div class="duration">
+                      <ion-icon name="time-outline"></ion-icon>
+  
+                      <time datetime="PT137M">2,3hs</time>
+                    </div>
+  
+                    <div class="puntuacion">
+                      <ion-icon name="estrella"></ion-icon>
+  
+                      <data>8.5</data>
+                    </div>
+                  </div>
+  
+                </div>
+              </li>
+  
+              <li>
+                <div class="pelicula-tarjeta">
+  
+                  <a href="">
+                    <figure class="tarjeta-banner">
+                      <img src="" alt="">
+                    </figure>
+                  </a>
+  
+                  <div class="titulo-sub-cont">
+                    <a href="">
+                      <h3 class="tarjeta-titulo">Pelicula X</h3>
+                    </a>
+  
+                    <time datetime="2022">2004</time>
+                  </div>
+  
+                  <div class="tarjeta-meta">
+                    <div class="badge badge-outline">4K</div>
+  
+                    <div class="duration">
+                      <ion-icon name="time-outline"></ion-icon>
+  
+                      <time datetime="PT126M">2,6hs</time>
+                    </div>
+  
+                    <div class="puntuacion">
+                      <ion-icon name="estrella"></ion-icon>
+  
+                      <data>NR</data>
+                    </div>
+                  </div>
+  
+                </div>
+              </li>
+  
+              <li>
+                <div class="pelicula-tarjeta">
+  
+                  <a href="">
+                    <figure class="tarjeta-banner">
+                      <img src="" alt="">
+                    </figure>
+                  </a>
+  
+                  <div class="titulo-sub-cont">
+                    <a href="">
+                      <h3 class="tarjeta-titulo">Pelicula X</h3>
+                    </a>
+  
+                    <time datetime="2022">2004</time>
+                  </div>
+  
+                  <div class="tarjeta-meta">
+                    <div class="badge badge-outline">1080p</div>
+  
+                    <div class="duration">
+                      <ion-icon name="time-outline"></ion-icon>
+  
+                      <time datetime="">2hs</time>
+                    </div>
+  
+                    <div class="puntuacion">
+                      <ion-icon name="estrella"></ion-icon>
+  
+                      <data>NR</data>
+                    </div>
+                  </div>
+  
+                </div>
+              </li>
+  
+              <li>
+                <div class="pelicula-tarjeta">
+  
+                  <a href="">
+                    <figure class="tarjeta-banner">
+                      <img src="" alt="">
+                    </figure>
+                  </a>
+  
+                  <div class="titulo-sub-cont">
+                    <a href="">
+                      <h3 class="tarjeta-titulo">Pelicula X</h3>
+                    </a>
+  
+                    <time datetime="2022">2004</time>
+                  </div>
+  
+                  <div class="tarjeta-meta">
+                    <div class="badge badge-outline">HD</div>
+  
+                    <div class="duration">
+                      <ion-icon name="time-outline"></ion-icon>
+  
+                      <time datetime="PT107M">2hs</time>
+                    </div>
+  
+                    <div class="puntuacion">
+                      <ion-icon name="estrella"></ion-icon>
+  
+                      <data>NR</data>
+                    </div>
+                  </div>
+  
+                </div>
+              </li>
+  
+            </ul>
+  
+          </div>
+        </section>
+  
+  
+  
+<!-- MAS VISTAS -->
+  
+        <section class="mas-vistas">
+          <div class="contenedor">
+  
+            <h2 class="h2 section-titulo">Peliculas mas vistas</h2>
+  
+            <ul class="filter-list">
+  
+              <li>
+                <button class="filter-btn">peliculas</button>
+              </li>
+  
+              <li>
+                <button class="filter-btn">Shows</button>
+              </li>
+  
+              <li>
+                <button class="filter-btn">Documentales</button>
+              </li>
+  
+              <li>
+                <button class="filter-btn">Deportes</button>
+              </li>
+  
+            </ul>
+  
+            <ul class="peliculas-list">
+  
+              <li>
+                <div class="pelicula-tarjeta">
+  
+                  <a href="">
+                    <figure class="tarjeta-banner">
+                      <img src="" alt="">
+                    </figure>
+                  </a>
+  
+                  <div class="titulo-sub-cont">
+                    <a href="">
+                      <h3 class="tarjeta-titulo">Pelicula X</h3>
+                    </a>
+  
+                    <time datetime="2022">2004</time>
+                  </div>
+  
+                  <div class="tarjeta-meta">
+                    <div class="badge badge-outline">1080p</div>
+  
+                    <div class="duration">
+                      <ion-icon name="time-outline"></ion-icon>
+  
+                      <time datetime="PT122M">2hs</time>
+                    </div>
+  
+                    <div class="puntuacion">
+                      <ion-icon name="estrella"></ion-icon>
+  
+                      <data>7.8</data>
+                    </div>
+                  </div>
+  
+                </div>
+              </li>
+  
+              <li>
+                <div class="pelicula-tarjeta">
+  
+                  <a href="">
+                    <figure class="tarjeta-banner">
+                      <img src="" alt="">
+                    </figure>
+                  </a>
+  
+                  <div class="titulo-sub-cont">
+                    <a href="">
+                      <h3 class="tarjeta-titulo">Pelicula X</h3>
+                    </a>
+  
+                    <time datetime="2022">2004</time>
+                  </div>
+  
+                  <div class="tarjeta-meta">
+                    <div class="badge badge-outline">HD</div>
+  
+                    <div class="duration">
+                      <ion-icon name="time-outline"></ion-icon>
+  
+                      <time datetime="PT104M">2hs</time>
+                    </div>
+  
+                    <div class="puntuacion">
+                      <ion-icon name="estrella"></ion-icon>
+  
+                      <data>5.9</data>
+                    </div>
+                  </div>
+  
+                </div>
+              </li>
+  
+              <li>
+                <div class="pelicula-tarjeta">
+  
+                  <a href="">
+                    <figure class="tarjeta-banner">
+                      <img src="" alt="">
+                    </figure>
+                  </a>
+  
+                  <div class="titulo-sub-cont">
+                    <a href="">
+                      <h3 class="tarjeta-titulo">Pelicula X</h3>
+                    </a>
+  
+                    <time datetime="2022">2004</time>
+                  </div>
+  
+                  <div class="tarjeta-meta">
+                    <div class="badge badge-outline">4K</div>
+  
+                    <div class="duration">
+                      <ion-icon name="time-outline"></ion-icon>
+  
+                      <time datetime="PT106M">2hs</time>
+                    </div>
+  
+                    <div class="puntuacion">
+                      <ion-icon name="estrella"></ion-icon>
+  
+                      <data>7.0</data>
+                    </div>
+                  </div>
+  
+                </div>
+              </li>
+  
+              <li>
+                <div class="pelicula-tarjeta">
+  
+                  <a href="">
+                    <figure class="tarjeta-banner">
+                      <img src="" alt="">
+                    </figure>
+                  </a>
+  
+                  <div class="titulo-sub-cont">
+                    <a href="">
+                      <h3 class="tarjeta-titulo">Pelicula X</h3>
+                    </a>
+  
+                    <time datetime="2021">2004</time>
+                  </div>
+  
+                  <div class="tarjeta-meta">
+                    <div class="badge badge-outline">4K</div>
+  
+                    <div class="duration">
+                      <ion-icon name="time-outline"></ion-icon>
+  
+                      <time datetime="PT115M">2,5hs</time>
+                    </div>
+  
+                    <div class="puntuacion">
+                      <ion-icon name="estrella"></ion-icon>
+  
+                      <data>7.7</data>
+                    </div>
+                  </div>
+  
+                </div>
+              </li>
+  
+              <li>
+                <div class="pelicula-tarjeta">
+  
+                  <a href="">
+                    <figure class="tarjeta-banner">
+                      <img src="" alt="">
+                    </figure>
+                  </a>
+  
+                  <div class="titulo-sub-cont">
+                    <a href="">
+                      <h3 class="tarjeta-titulo">Pelicula X</h3>
+                    </a>
+  
+                    <time datetime="2022">2004</time>
+                  </div>
+  
+                  <div class="tarjeta-meta">
+                    <div class="badge badge-outline">4K</div>
+  
+                    <div class="duration">
+                      <ion-icon name="time-outline"></ion-icon>
+  
+                      <time datetime="PT176M">3hs</time>
+                    </div>
+  
+                    <div class="puntuacion">
+                      <ion-icon name="estrella"></ion-icon>
+  
+                      <data>7.9</data>
+                    </div>
+                  </div>
+  
+                </div>
+              </li>
+  
+              <li>
+                <div class="pelicula-tarjeta">
+  
+                  <a href="">
+                    <figure class="tarjeta-banner">
+                      <img src="" alt="">
+                    </figure>
+                  </a>
+  
+                  <div class="titulo-sub-cont">
+                    <a href="">
+                      <h3 class="tarjeta-titulo">Pelicula X</h3>
+                    </a>
+  
+                    <time datetime="2022">2004</time>
+                  </div>
+  
+                  <div class="tarjeta-meta">
+                    <div class="badge badge-outline">1080p</div>
+  
+                    <div class="duration">
+                      <ion-icon name="time-outline"></ion-icon>
+  
+                      <time datetime="PT116M">2hs</time>
+                    </div>
+  
+                    <div class="puntuacion">
+                      <ion-icon name="estrella"></ion-icon>
+  
+                      <data>7.0</data>
+                    </div>
+                  </div>
+  
+                </div>
+              </li>
+  
+              <li>
+                <div class="pelicula-tarjeta">
+  
+                  <a href="">
+                    <figure class="tarjeta-banner">
+                      <img src="" alt="">
+                    </figure>
+                  </a>
+  
+                  <div class="titulo-sub-cont">
+                    <a href="">
+                      <h3 class="tarjeta-titulo">Pelicula X</h3>
+                    </a>
+  
+                    <time datetime="2022">2004</time>
+                  </div>
+  
+                  <div class="tarjeta-meta">
+                    <div class="badge badge-outline">4K</div>
+  
+                    <div class="duration">
+                      <ion-icon name="time-outline"></ion-icon>
+  
+                      <time datetime="PT127M">3hs</time>
+                    </div>
+  
+                    <div class="puntuacion">
+                      <ion-icon name="estrella"></ion-icon>
+  
+                      <data>6.5</data>
+                    </div>
+                  </div>
+  
+                </div>
+              </li>
+  
+              <li>
+                <div class="pelicula-tarjeta">
+  
+                  <a href="">
+                    <figure class="tarjeta-banner">
+                      <img src="" alt="">
+                    </figure>
+                  </a>
+  
+                  <div class="titulo-sub-cont">
+                    <a href="">
+                      <h3 class="tarjeta-titulo">Pelicula X</h3>
+                    </a>
+  
+                    <time datetime="2021">2004</time>
+                  </div>
+  
+                  <div class="tarjeta-meta">
+                    <div class="badge badge-outline">1080p</div>
+  
+                    <div class="duration">
+                      <ion-icon name="time-outline"></ion-icon>
+  
+                      <time datetime="PT131M">2hs</time>
+                    </div>
+  
+                    <div class="puntuacion">
+                      <ion-icon name="estrella"></ion-icon>
+  
+                      <data>7.0</data>
+                    </div>
+                  </div>
+  
+                </div>
+              </li>
+  
+            </ul>
+  
+          </div>
+        </section>
+    </main>
+  
+    <!-- FOOTER -->
+  
+    <footer class="footer">
+  
+      <div class="footer-top">
+        <div class="contenedor">
+  
+          <div class="footer-brand-sub-cont">
+  
+            <a href="" class="logo">
+              <img src="" alt="">
+            </a>
+  
+            <ul class="footer-list">
+  
+              <li>
+                <a href="./index.html" class="footer-link">INICIO</a>
+              </li>
+  
+              <li>
+                <a href="#" class="footer-link">SOBRE ESTE SITIO</a>
+              </li>
+  
+              <li>
+                <a href="#" class="footer-link">SOBRE EL DESARROLLADOR</a>
+              </li>
+            </ul>
+  
+          </div>
+
+          <div class="quicklink-sub-cont">
+  
+            <ul class="quicklink-list">
+  
+              <li>
+                <a href="#" class="quicklink-link">link 1</a>
+              </li>
+  
+              <li>
+                <a href="#" class="quicklink-link">link 2</a>
+              </li>
+  
+              <li>
+                <a href="#" class="quicklink-link">link 3</a>
+              </li>
+  
+              <li>
+                <a href="#" class="quicklink-link">link 4</a>
+              </li>
+  
+            </ul>
+  
+            <ul class="social-list">
+  
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+  
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+              </li>
+  
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-pinterest"></ion-icon>
+                </a>
+              </li>
+  
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+              </li>
+  
+            </ul>
+  
+          </div>
+  
+        </div>
+      </div>
+  
+      <div class="footer-bottom">
+        <div class="contenedor">
+  
+          <p class="copyright">
+            &copy; copyright 2024 Henry Movies | by <a href="#">Santiago Cabral</a>
+          </p>
+  
+        </div>
+      </div>
+  
+    </footer>
+
+
+    <!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
 
     <script src="./scripts/tempData.js"></script>
     <script src="./scripts/index.js"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
   </body>
 </html>
+
+<!-- https://github.com/pi-rym/PM2-Santicabral0478.git -->
