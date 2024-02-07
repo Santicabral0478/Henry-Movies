@@ -1,54 +1,47 @@
-console.log(tempData);
+
+// INSECIÓN DE TARJETAS
+    $.get('https://students-api.2.us-1.fl0.io/movies', (data) =>{
+
+    
+    const peliculasList = document.querySelector('.peliculas-list');
+
+    function crearPelicula(pelicula){
+        const li = document.createElement("li");
+
+            li.innerHTML =`
+            <div class="pelicula-tarjeta">
+                <a href="">
+                    <figure class="tarjeta-banner">
+                        <img src="${pelicula.poster}" alt="${pelicula.title}">
+                    </figure>
+                </a>
+                <div class="titulo-sub-cont">
+                    <a href="">
+                        <h3 class="tarjeta-titulo">${pelicula.title}</h3>
+                    </a>
+                    <time datetime="${pelicula.year}">${pelicula.year}</time>
+                </div>
+                <div class="tarjeta-meta">
+                    <div class="genre"><span class="span-genero">${pelicula.genre.join(', ')}</span></div>
+                    <div class="badge badge-outline">${pelicula.director}</div>
+                    <div class="duration">
+                        <ion-icon name="time-outline"></ion-icon>
+                        <time datetime="">${pelicula.duration}</time>
+                    </div>
+                    <div class="puntuacion">
+                        <ion-icon name="estrella"></ion-icon>
+                        <data>${pelicula.rate}</data>
+                    </div>
+                </div>
+            </div>`;
+
+        peliculasList.appendChild(li);
+    }
 
 
+        for (let i = 0; i < data.length; i++) {
+            const pelicula = data[i];
+            crearPelicula(pelicula);
+        }
 
-/**
- * navbar variables
- */
-
-const navOpenBtn = document.querySelector("[data-menu-open-btn]");
-const navCloseBtn = document.querySelector("[data-menu-close-btn]");
-const navbar = document.querySelector("[data-navbar]");
-const overlay = document.querySelector("[data-overlay]");
-
-const navElemArr = [navOpenBtn, navCloseBtn, overlay];
-
-for (let i = 0; i < navElemArr.length; i++) {
-
-  navElemArr[i].addEventListener("click", function () {
-
-    navbar.classList.toggle("active");
-    overlay.classList.toggle("active");
-    document.body.classList.toggle("active");
-
-  });
-
-}
-
-
-
-/**
- * header sticky
- */
-
-const header = document.querySelector("[data-header]");
-
-window.addEventListener("scroll", function () {
-
-  window.scrollY >= 10 ? header.classList.add("active") : header.classList.remove("active");
-
-});
-
-
-
-/**
- * go top
- */
-
-const goTopBtn = document.querySelector("[data-go-top]");
-
-window.addEventListener("scroll", function () {
-
-  window.scrollY >= 500 ? goTopBtn.classList.add("active") : goTopBtn.classList.remove("active");
-
-});
+    })
