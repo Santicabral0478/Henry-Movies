@@ -40,7 +40,18 @@
     color: #141414;
   }
   
-  .badge-outline { border-color: #ececec; }
+  .backbadge1, .backbadge2{
+    color: #0e0e0e;
+  }
+
+  .backbadge1{
+    background-color: #32e7d5;
+    border-radius: 5px;
+  }
+
+  .backbadge2{
+    background-color: #252bdf;
+  }
 
   .meta-sub-cont {
     display: flex;
@@ -79,31 +90,6 @@
     font-size: 12px;
     font-weight: 500;
   }
-
-  
-  .btn {
-    color: #ececec;
-    font-size: 12px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 16px 30px;
-    border: 2px solid #efefef;
-    border-radius: 50px;
-    transition: 0.15s ease-in;
-  }
-  
-  .btn > ion-icon { font-size: 18px; }
-  
-  .btn-primary { background: #141414; }
-  
-  .btn-primary:is(:hover, :focus) {
-    background: #efefef;
-    color: #411e1e;
-  }
   
 /* TARJETAS DE PELICULAS */
 
@@ -117,6 +103,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    background-color: #141414;
   }
   
   .pelicula-tarjeta .tarjeta-banner {
@@ -206,6 +193,14 @@
     overflow-x: auto;
     scroll-snap-type: inline mandatory;
     padding-bottom: 25px;
+  }
+
+  .color-card{
+    border: 2px solid #747474;
+  }
+
+  .padd-card{
+    padding: 6px;
   }
   
   .has-scrollbar::-webkit-scrollbar { height: 8px; }
@@ -387,6 +382,16 @@ background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
   .inicio-titulo { margin-bottom: 30px; }
   
   .inicio-titulo > strong { color: #efefef; }
+
+
+  .width-btn{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    padding: 1rem;
+    gap: 1.2rem;
+    width: 10rem;
+  }
   
   
 /* PROXIMAMENTE */
@@ -395,6 +400,7 @@ background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
     background-size: cover;
     background-position: center;
     padding-block: 3rem;
+    background: #000000;
   }
   
   .proximamente .flex-sub-cont { margin-bottom: 50px; }
@@ -737,7 +743,7 @@ background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
   
   @media (min-width: 992px) {
     .contenedor { 
-        max-width: 960px; 
+        max-width: 1200px; 
     }
     .peliculas-list { 
         grid-template-columns: repeat(3, 1fr); 
@@ -791,7 +797,7 @@ background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
   @media (min-width: 1200px) {
 
     .inicio .contenedor {
-      width: 1072px;
+      width: 1220px;
     }
     .peliculas-list { 
       grid-template-columns: repeat(4, 1fr); 
