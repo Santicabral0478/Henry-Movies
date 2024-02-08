@@ -97,6 +97,11 @@
     display: grid;
     gap: 50px;
   }
+
+  .peliculas-list-js {
+    display: grid;
+    gap: 50px;
+  }
   
   .pelicula-tarjeta {
     height: 100%;
@@ -236,9 +241,10 @@ background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
   .header.active {
     background: #000;
     padding-block: 20px;
-    background: hsla(0, 0%, 19%, 0.8);
+    background: hsl(0deg 0% 19% / 54%);
     backdrop-filter: blur(10px);
-  }
+    border-bottom: 2px solid #3e3e3e84;
+}
   
   .header .contenedor {
     display: flex;
@@ -348,14 +354,11 @@ background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
   justify-content: flex-start;
   align-items: center;
   padding-block: 2rem;
-  margin-top: -2rem;
+  margin-top: -6rem;
   width: 100%;
 }
   
   .inicio {
-    background-image: url(https://hips.hearstapps.com/hmg-prod/images/avengers-endgame-cap-sam-1607348922.png);
-    background-size: cover;
-    background-position: center;
     min-height: 750px;
     max-height: 1000px;
     display: flex;
@@ -363,6 +366,12 @@ background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
     align-items: center;
     padding-block: 6rem;
     margin-top: -2rem;
+  }
+
+  .inicio-vid{
+    margin-top: -3rem;
+    width: 100%;
+    position: absolute;
   }
 
   .inicio .contenedor{
@@ -428,6 +437,11 @@ background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
   .proximamente .filter-btn:focus { border-color: #efefef; }
   
   .proximamente .peliculas-list > li {
+    min-width: 100%;
+    scroll-snap-align: start;
+  }
+
+  .proximamente .peliculas-list-js > li {
     min-width: 100%;
     scroll-snap-align: start;
   }
@@ -659,11 +673,16 @@ background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
       grid-template-columns: 1fr 1fr;
       gap: 60px 30px;
     }
+    .peliculas-list-js {
+      grid-template-columns: 1fr 1fr;
+      gap: 60px 30px;
+    }
     .inicio { min-height: unset; }
   
     .inicio-contenido { margin-top: 20px; }
   
     .proximamente .peliculas-list > li { min-width: calc(50% - 15px); }
+    .proximamente .peliculas-list-js > li { min-width: calc(50% - 15px); }
   
   }
   
@@ -742,12 +761,20 @@ background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
   }
   
   @media (min-width: 992px) {
+
+    .max-w_js{
+      max-width: 900px;
+    }
     .contenedor { 
         max-width: 1200px; 
     }
     .peliculas-list { 
         grid-template-columns: repeat(3, 1fr); 
     }
+
+    .peliculas-list-js { 
+      grid-template-columns: repeat(3, 1fr); 
+  }
     .header.active { 
         padding-block: 5px; 
     }
@@ -798,6 +825,10 @@ background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
 
     .inicio .contenedor {
       width: 1220px;
+    }
+
+    .max-w_js{
+      max-width: 909px;
     }
     .peliculas-list { 
       grid-template-columns: repeat(4, 1fr); 
