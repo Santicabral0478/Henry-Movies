@@ -1,5 +1,18 @@
 
 
+// const axios = require("axios");
+
+// const getMovies = async () => {
+//     try{
+//         const data = await axios.get("https://rickandmortyapi.com/api/character/331");
+//         console.log("Estamos por intentar algunas operaciones:");
+//         console.log(data.data);
+//     }catch(err){
+//         console.log("tuvimos un error : /");
+//         console.log(err.message);
+//     }
+// }
+
 // INSECIÓN DE TARJETAS ALLAX (BLOQUE-2)
 const renderCards = (data)=>{
         const peliculasList = document.querySelector('.peliculas-list-js');
@@ -45,5 +58,7 @@ const renderCards = (data)=>{
             crearPelicula(pelicula);
         }
 }
+
+
 
 module.exports = renderCards;

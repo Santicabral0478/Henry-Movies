@@ -1,11 +1,22 @@
 const renderCards = require("./rendermovies");
+const axios = require("axios");
 
-// INSECIÓN DE TARJETAS ALLAX (BLOQUE-1)
-$.get('https://students-api.2.us-1.fl0.io/movies', (data) =>{
+const getMovies = async () => {
+    try {
+        const cont = await axios.get("https://students-api.2.us-1.fl0.io/movies");
+        const data = cont.data;
+        renderCards(data); 
+    } catch (err) {
+        console.log("tuvimos un error : /", err.message);
+    }
+}
 
-renderCards(data);
-})
+getMovies();
 
 
+// // INSECIÓN DE TARJETAS ALLAX (BLOQUE-1)
+// $.get('https://students-api.2.us-1.fl0.io/movies', (data) =>{
 
+// renderCards(data);
+// })
 
