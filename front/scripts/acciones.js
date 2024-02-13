@@ -1,9 +1,9 @@
 
-    // NAVBAR COMPORTAMIENTO & BTN NAV
+    // navbarA COMPORTAMIENTO & BTN NAV
     
     const navOpenBtn = document.querySelector("[data-menu-open-btn]");
     const navCloseBtn = document.querySelector("[data-menu-close-btn]");
-    const navbar = document.querySelector("[data-navbar]");
+    const navbarA = document.querySelector("[data-navbarA]");
     const overlay = document.querySelector("[data-overlay]");
     
     const navElemArr = [navOpenBtn, navCloseBtn, overlay];
@@ -12,7 +12,7 @@
     
       navElemArr[i].addEventListener("click", function () {
     
-        navbar.classList.toggle("active");
+        navbarA.classList.toggle("active");
         overlay.classList.toggle("active");
         document.body.classList.toggle("active");
     

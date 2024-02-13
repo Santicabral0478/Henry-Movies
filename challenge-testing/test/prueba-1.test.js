@@ -25,7 +25,6 @@ describe('CarritoCompra', () => {
         carrito.agregarProducto(producto2);
         expect(carrito.calcularTotal()).toBe(50);
     });
-
     test('Aplicar descuento al total de la compra', () => {
         const producto1 = { nombre: 'Camisa', precio: 20 };
         const producto2 = { nombre: 'Pantalón', precio: 30 };
