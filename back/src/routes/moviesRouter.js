@@ -6,3 +6,4 @@ const moviesRouter = express.Router();
 moviesRouter.get('/', getMovies);
 
 module.exports = moviesRouter;
+
