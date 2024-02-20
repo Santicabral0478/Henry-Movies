@@ -48,11 +48,11 @@
           </li>
 
           <li>
-            <a href="#" class="navbarA-link">Sobre este sitio</a>
+            <a href="./sobreH.html" class="navbarA-link">Sobre este sitio</a>
           </li>
 
           <li>
-            <a href="./cargarPeliculas.html" class="navbarA-link">Subir una pelicula</a>
+            <a href="#" class="navbarA-link">Subir una pelicula</a>
           </li>
 
         </ul>
@@ -97,28 +97,46 @@
   </header>
 
 
-    <main>
-        <section class="text-content_sobr-h">
-          <div class="text_video-cont">
-
-            <h2 class="title-inf">
-              Nuestra Historia: Un Viaje Cinematográfico
-            </h2>
-            <p class="sobre-h-text-A">
-              En este apartado, te invitamos a descubrir cómo nació nuestra pasión por el cine y cómo hemos evolucionado a lo largo de los años. Desde nuestros modestos inicios como un pequeño cine local hasta convertirnos en un destino emblemático para los amantes del séptimo arte, cada capítulo de nuestra historia está impregnado de emoción, creatividad y dedicación..</p>
-            <video autoplay loop muted src="../recursos/vid-rec1.mp4" class="cinema-sobr-h"></video>
-          </div>
-          
-          <div class="text_video-cont-C">
-            <h2 class="title-inf">
-              Nuestra Misión: Más Que Solo Películas
-            </h2>
-            <p class="sobre-h-text-C">
-              Aquí, te invitamos a descubrir nuestra visión más amplia y nuestro compromiso con la comunidad. En este apartado, exploraremos cómo nos esforzamos por ser más que un simple cine, aspirando a ser un punto de encuentro cultural y un catalizador para el diálogo, la inspiración y el entretenimientos.</p>
-            <video autoplay loop muted src="../recursos/vid-rec2.mp4" class="cinema-sobr-h"></video>
-          </div>
-        </section>
-  
+    <main><div class="contenedor">
+        <div class="container-form">
+            <header>Registrar Peliculas</header>
+            <form class="form" id="movieForm">
+                <div class="input-box">
+                    <label>Title</label>
+                    <input required="" placeholder="Titulo Pelicula" type="text" name="title">
+                </div>
+                <div class="column">
+                    <div class="input-box">
+                        <label>Año</label>
+                        <input required="" placeholder="Año de lanzamiento" type="number" name="year" min="1895">
+                    </div>
+                    <div class="input-box">
+                        <label>Director</label>
+                        <input required="" placeholder="Director" type="text" name="director">
+                    </div>
+                </div>
+                <div class="input-box">
+                    <label>Duración</label>
+                    <input required="" placeholder="Tiempo de duración" type="text" name="duration">
+                </div>
+                <div class="input-box address">
+                    <label>Genero</label>
+                    <input required="" placeholder="Genero" type="text" name="genre">
+                </div>
+                <div class="input-box">
+                    <label>Puntuación</label>
+                    <input required="" placeholder="Puntuación de la pelicula" type="number" name="rate">
+                </div>
+                <div class="input-box">
+                    <label>Poster</label>
+                    <input required="" placeholder="URL del poster" type="text" name="poster">
+                </div>
+                <button class="carg-btn" type="submit">¡Cargar!</button>
+                <button class="limp-btn" type="submit">Limpiar Formulario</button>                
+            </form>
+            
+        </div>
+    </div>
     </main>
   
     <!-- FOOTER -->
@@ -229,5 +247,3 @@
 
   </body>
 </html>
-
-<!-- https://github.com/pi-rym/PM2-Santicabral0478.git -->
