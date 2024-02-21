@@ -176,7 +176,7 @@
   
   .pelicula-tarjeta .duration { margin-left: auto; }
   
-  .pelicula-tarjeta :is(.duration, .puntuacion) {
+  .pelicula-tarjeta :is(.duration, .puntuacion, .generos) {
     display: flex;
     align-items: center;
     gap: 5px;

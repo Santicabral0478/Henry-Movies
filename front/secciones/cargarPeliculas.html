@@ -97,42 +97,43 @@
   </header>
 
 
-    <main><div class="contenedor">
+    <main>
+      <div class="contenedor">
         <div class="container-form">
             <header>Registrar Peliculas</header>
             <form class="form" id="movieForm">
                 <div class="input-box">
                     <label>Title</label>
-                    <input required="" placeholder="Titulo Pelicula" type="text" name="title">
+                    <input required="" id="title" placeholder="Titulo Pelicula" type="text" name="title">
                 </div>
-                <div class="column">
+                <div class="column"> 
                     <div class="input-box">
                         <label>Año</label>
-                        <input required="" placeholder="Año de lanzamiento" type="number" name="year" min="1895">
+                        <input required="" id="year" placeholder="Año de lanzamiento" type="number" name="year" min="1895">
                     </div>
                     <div class="input-box">
                         <label>Director</label>
-                        <input required="" placeholder="Director" type="text" name="director">
+                        <input required="" id="director" placeholder="Director" type="text" name="director">
                     </div>
                 </div>
                 <div class="input-box">
                     <label>Duración</label>
-                    <input required="" placeholder="Tiempo de duración" type="text" name="duration">
+                    <input required="" id="duration" placeholder="Tiempo de duración" type="text" name="duration">
                 </div>
                 <div class="input-box address">
                     <label>Genero</label>
-                    <input required="" placeholder="Genero" type="text" name="genre">
+                    <input required="" id="genre" placeholder="Genero" type="text" name="genre">
                 </div>
                 <div class="input-box">
                     <label>Puntuación</label>
-                    <input required="" placeholder="Puntuación de la pelicula" type="number" name="rate">
+                    <input required="" id="rate" placeholder="Puntuación de la pelicula" type="number" name="rate">
                 </div>
                 <div class="input-box">
                     <label>Poster</label>
-                    <input required="" placeholder="URL del poster" type="text" name="poster">
+                    <input required="" id="poster" placeholder="URL del poster" type="text" name="poster">
                 </div>
                 <button class="carg-btn" type="submit">¡Cargar!</button>
-                <button class="limp-btn" type="submit">Limpiar Formulario</button>                
+                <button class="limp-btn" onclick="clearForm()" type="button">Limpiar Formulario</button>                
             </form>
             
         </div>
@@ -240,6 +241,7 @@
     <!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
 
     <script src="../scripts/acciones.js"></script>
+    <script src="../scripts/form.js"></script>
 
     
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>

@@ -10,4 +10,16 @@ const getMovies = async (req, res) => {
   }
 };
 
-module.exports = { getMovies };
+
+async function createMovie(req, res) {
+  try {
+      const movieData = req.body;
+      const newMovie = await movieService.createMovie(movieData);
+      res.status(201).json({ message: "Película creada correctamente", movie: newMovie });
+  } catch (error) {
+      console.error("Error al crear película:", error);
+      res.status(500).json({ error: "Error al crear película" });
+  }
+}
+
+module.exports = { getMovies, createMovie };
