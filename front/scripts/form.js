@@ -50,21 +50,9 @@ document.getElementById("movieForm").addEventListener("submit", function(event) 
 });
 
 function saveMovie(movieData) {
-    fetch("http://localhost:3001/movies", {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(movieData),
-    })
+    axios.post("http://localhost:3001/movies", movieData)
     .then(response => {
-        if (!response.ok) {
-            throw new Error('Hubo un problema al guardar la película ❌');
-        }
-        return response.json();
-    })
-    .then(data => {
-        console.log(data);
+        console.log(response.data);
         alert("Película guardada correctamente ✅");
         clearForm();
     })
