@@ -6,11 +6,14 @@
     <title>Henry Movies</title>
     <link rel="stylesheet" href="../styles/reset.css">
     <link rel="stylesheet" href="../styles/style.css">
-  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://kit.fontawesome.com/35aca853ee.js" crossorigin="anonymous"></script>
+
+  <<link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   </head>
-  <body>
+  <body class="body-form">
     <!-- ::::::::::::::::::::::::::::::::::::::::contenido X:::::::::::::::::::::::::::::::::::::::::::::: -->
 
     
@@ -103,37 +106,33 @@
             <header>Registrar Peliculas</header>
             <form class="form" id="movieForm">
                 <div class="input-box">
-                    <label>Title</label>
                     <input required="" id="title" placeholder="Titulo Pelicula" type="text" name="title">
                 </div>
                 <div class="column"> 
                     <div class="input-box">
-                        <label>Año</label>
                         <input required="" id="year" placeholder="Año de lanzamiento" type="number" name="year" min="1895">
                     </div>
                     <div class="input-box">
-                        <label>Director</label>
                         <input required="" id="director" placeholder="Director" type="text" name="director">
                     </div>
                 </div>
                 <div class="input-box">
-                    <label>Duración</label>
                     <input required="" id="duration" placeholder="Tiempo de duración" type="text" name="duration">
                 </div>
                 <div class="input-box address">
-                    <label>Genero</label>
                     <input required="" id="genre" placeholder="Genero" type="text" name="genre">
                 </div>
                 <div class="input-box">
-                    <label>Puntuación</label>
-                    <input required="" id="rate" placeholder="Puntuación de la pelicula" type="number" name="rate">
+                    <input required="" step="any" id="rate" placeholder="Puntuación de la pelicula" type="number" name="rate">
                 </div>
                 <div class="input-box">
-                    <label>Poster</label>
                     <input required="" id="poster" placeholder="URL del poster" type="text" name="poster">
                 </div>
-                <button class="carg-btn" type="submit">¡Cargar!</button>
-                <button class="limp-btn" onclick="clearForm()" type="button">Limpiar Formulario</button>                
+
+                <div class="button-container">
+                  <button class="carg-btn" type="submit">Cargar <i class="fa-solid fa-arrow-up-short-wide"></i></button>
+                  <button class="limp-btn" onclick="clearForm()" type="button">Limpiar Formulario <i class="fa-solid fa-trash"></i></button>       
+                </div>         
             </form>
             
         </div>

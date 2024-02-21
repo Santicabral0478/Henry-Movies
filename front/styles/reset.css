@@ -33,7 +33,7 @@
     scroll-behavior: smooth;
   }
   
-  body { background: #000; }
+  body { background: #000000; }
   
   body.active { overflow: hidden; }
   

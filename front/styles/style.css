@@ -1,5 +1,9 @@
   /* ESTILOS GENERALES */
   
+*{
+  font-family: "Montserrat", sans-serif;
+}
+
   .contenedor { padding-inline: 15px; }
   
   .h1,
@@ -115,11 +119,11 @@
     position: relative;
     background: #343434;
     aspect-ratio: 2 / 3;
-    border-radius: 6px;
     overflow: hidden;
+    border-radius: 0.9rem 0.9rem 0 0;
     margin-bottom: 20px;
     transition: 0.15s ease-in;
-  }
+}
   
   .pelicula-tarjeta .tarjeta-banner::after {
     content: "";
@@ -200,9 +204,10 @@
     padding-bottom: 25px;
   }
 
-  .color-card{
-    border: 2px solid #747474;
-  }
+  .color-card {
+    border: 2px solid #2d2d2d;
+    border-radius: 1rem;
+}
 
   .padd-card{
     padding: 6px;
@@ -650,25 +655,27 @@
 
   /* SECCION DE CARGA DE PELICULAS */
 
-
+  .body-form {
+    background: #282828;
+  }
 
 
   .container-form {
     position: relative;
-    max-width: 500px;
+    max-width: 730px;
     width: 100%;
-    background: #d7d7d7;
     padding: 25px;
-    border-radius: 8px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-
     margin-inline: auto;
     margin-block: 8rem;
-  }
+    border-radius: 36px;
+    background: linear-gradient(145deg, #242424, #343434);
+    box-shadow: 27px 27px 55px #161616, -27px -27px 55px #3a3a3a;
+    border: 1px solid #464646;
+}
   
   .container-form header {
     font-size: 1.2rem;
-    color: #000;
+    color: #c2c2c2;
     font-weight: 600;
     text-align: center;
   }
@@ -679,26 +686,37 @@
   
   .form .input-box {
     width: 100%;
-    margin-top: 10px;
+    margin-top: 22px;
   }
   
   .input-box label {
-    color: #000;
+    color: #bebebe;
   }
   
   .form :where(.input-box input, .select-box) {
     position: relative;
-    height: 35px;
+    height: 50px;
     width: 100%;
     outline: none;
     font-size: 1rem;
-    color: #000000;
+    color: #d7ebff;
     margin-top: 5px;
-    border: 1px solid #0048ff;
-    border-radius: 6px;
-    padding: 0 15px;
-    background: #b0beff;
-  }
+    border: 1px solid #939393;
+    border-radius: 23px;
+    padding: 0 26px;
+    background: #5b5b5b;
+}
+
+.button-container{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin-top: 25px;
+}
+
+::placeholder{
+  color: #ffffff;
+}
   
   .input-box input:focus {
     box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
@@ -751,32 +769,34 @@
   }
   
   .carg-btn {
-    height: 40px;
+    height: 55px;
     width: 100%;
     color: #000;
     font-size: 1rem;
     font-weight: 400;
     margin-top: 15px;
     border: none;
-    border-radius: 6px;
+    border-radius: 36px;
     cursor: pointer;
     transition: all 0.2s ease;
-    background: #43ee34;
-  }
+    background: linear-gradient(36deg, rgb(112 235 101) 0%, rgb(39 207 0) 100%);
+    border: 2px solid rgb(84 255 44);
+}
   
-  .limp-btn{
-    height: 40px;
-    width: 100%;
-    color: #000;
-    font-size: 1rem;
-    font-weight: 400;
-    margin-top: 15px;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    background: #EE4E34;
-  }
+.limp-btn {
+  height: 55px;
+  width: 100%;
+  color: #000;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 15px;
+  border: none;
+  border-radius: 36px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background: linear-gradient(36deg, rgb(211 49 47) 0%, rgb(238, 78, 78) 100%);
+  border: 2px solid rgb(239, 96, 96);
+}
 
   .form .carg-btn:hover {
     background: #94dd73;
