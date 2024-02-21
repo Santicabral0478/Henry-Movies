@@ -807,8 +807,26 @@
   }
 
 
+/* MAS VISTAS pELICULAS */
 
+.contenedor-tabla{
+  margin-top: 6rem;
+  width: 100%;
+}
 
+.contenedor-tabla table{
+  padding-inline: 2rem;
+}
+
+.contenedor-tabla h2{
+  margin-inline-start: 2rem;
+}
+
+.tabla-gral-cont{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
 
 
 
