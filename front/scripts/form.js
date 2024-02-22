@@ -49,7 +49,7 @@ document.getElementById("movieForm").addEventListener("submit", function(event) 
     }
 });
 
-function saveMovie(movieData) {
+async function saveMovie(movieData) {
     axios.post("http://localhost:3001/movies", movieData)
     .then(response => {
         console.log(response.data);
