@@ -11,11 +11,6 @@ app.use(morgan("dev"))
   
 app.use(express.json());            
 
-app.use((req, res, next) =>{
-    console.log("¿Estamos pasando por nuestro propio middleware!");
-    next();
-});
-
 app.use('/movies', moviesRouter);
 
 module.exports = app;

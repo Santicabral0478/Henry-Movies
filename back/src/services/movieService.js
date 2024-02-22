@@ -14,7 +14,7 @@ module.exports = {
     } catch (error) {
         throw error;
     }
-}
+} 
 }
 
   // mongodb+srv://scsantiagocabral:DXFvbIiw6XWH9b1S@homeworkmoviesm2.77njpzc.mongodb.net/

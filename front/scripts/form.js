@@ -53,7 +53,7 @@ function saveMovie(movieData) {
     axios.post("http://localhost:3001/movies", movieData)
     .then(response => {
         console.log(response.data);
-        alert("Película guardada correctamente ✅");
+        alert("Película creada y guardada satisfactoriamente ✅");
         clearForm();
     })
     .catch(error => {
